@@ -1,0 +1,73 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url('../assets/icons/style.css');
+
+$accent: rgb(251 153 0);
+$bg: rgb(43 43 53);
+$bg_inset: rgb(34 34 44);
+$size: 60px;
+$radius: 16px;
+$shadow: -4px -4px 4px #ffffff17, 4px 4px 4px rgba(0, 0, 0, 0.3);
+$shadow_inset: inset 4px 4px 4px rgba(0, 0, 0, 0.3), inset -4px -4px 4px #ffffff17;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(35 36 41);
+  color: rgb(251 153 0);
+  font-family: 'Nunito', sans-serif;
+}
+
+// ? Grid
+
+.grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 64px;
+  & > div > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+// ? Button
+
+.buttons {
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  font-size: 24px;
+  font-weight: 200;
+  color: rgb(130 132 147);
+  .button {
+    height: $size;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0 3vw;
+    border-radius: $radius;
+    background-color: $bg;
+    box-shadow: $shadow;
+    &_press {
+      background-color: $bg_inset;
+      box-shadow: $shadow_inset;
+      color: rgb(76 76 87);
+      font-weight: 300;
+    }
+    &:hover,
+    &_hover {
+      background-color: $accent;
+      color: white;
+    }
+    &_active {
+      color: $accent;
+    }
+    &_icon {
+      width: $size;
+      padding: 0;
+    }
+  }
+}
