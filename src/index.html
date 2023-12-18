@@ -9,39 +9,189 @@
     <div class="grid">
       <div>
         <div class="buttons">
-          <div class="button">button</div>
-          <div class="button button_icon"><i class="ic_menu"></i></div>
-          <div class="button button_icon"><i class="ic_home"></i></div>
-          <div class="button button_icon"><i class="ic_bell"></i></div>
-          <div class="button button_icon"><i class="ic_heart"></i></div>
-          <div class="button button_icon"><i class="ic_bookmark"></i></div>
+          <button class="button default">button</button>
+          <button class="button default icon"><i class="ic_menu"></i></button>
+          <button class="button default icon"><i class="ic_home"></i></button>
+          <button class="button default icon"><i class="ic_bell"></i></button>
+          <button class="button default icon"><i class="ic_heart"></i></button>
+          <button class="button default icon">
+            <i class="ic_bookmark"></i>
+          </button>
         </div>
         <div class="buttons">
-          <div class="button button_press">button</div>
-          <div class="button button_press button_icon"><i class="ic_menu"></i></div>
-          <div class="button button_press button_icon"><i class="ic_home"></i></div>
-          <div class="button button_press button_icon"><i class="ic_bell"></i></div>
-          <div class="button button_press button_icon"><i class="ic_heart"></i></div>
-          <div class="button button_press button_icon"><i class="ic_bookmark"></i></div>
+          <button disabled class="button press">button</button>
+          <button disabled class="button press icon">
+            <i class="ic_menu"></i>
+          </button>
+          <button disabled class="button press icon">
+            <i class="ic_home"></i>
+          </button>
+          <button disabled class="button press icon">
+            <i class="ic_bell"></i>
+          </button>
+          <button disabled class="button press icon">
+            <i class="ic_heart"></i>
+          </button>
+          <button disabled class="button press icon">
+            <i class="ic_bookmark"></i>
+          </button>
         </div>
         <div class="buttons">
-          <div class="button button_hover">button</div>
-          <div class="button button_hover button_icon"><i class="ic_menu"></i></div>
-          <div class="button button_hover button_icon"><i class="ic_home"></i></div>
-          <div class="button button_hover button_icon"><i class="ic_bell"></i></div>
-          <div class="button button_hover button_icon"><i class="ic_heart"></i></div>
-          <div class="button button_hover button_icon"><i class="ic_bookmark"></i></div>
+          <button class="button hover">button</button>
+          <button class="button hover icon"><i class="ic_menu"></i></button>
+          <button class="button hover icon"><i class="ic_home"></i></button>
+          <button class="button hover icon"><i class="ic_bell"></i></button>
+          <button class="button hover icon"><i class="ic_heart"></i></button>
+          <button class="button hover icon"><i class="ic_bookmark"></i></button>
         </div>
         <div class="buttons">
-          <div class="button button_active">button</div>
-          <div class="button button_active button_icon"><i class="ic_menu"></i></div>
-          <div class="button button_active button_icon"><i class="ic_home"></i></div>
-          <div class="button button_active button_icon"><i class="ic_bell"></i></div>
-          <div class="button button_active button_icon"><i class="ic_heart"></i></div>
-          <div class="button button_active button_icon"><i class="ic_bookmark"></i></div>
+          <button class="button active">button</button>
+          <button class="button active icon"><i class="ic_menu"></i></button>
+          <button class="button active icon"><i class="ic_home"></i></button>
+          <button class="button active icon"><i class="ic_bell"></i></button>
+          <button class="button active icon"><i class="ic_heart"></i></button>
+          <button class="button active icon">
+            <i class="ic_bookmark"></i>
+          </button>
+        </div>
+        <div class="inner-grid">
+          <div>
+            <input type="text" class="input press" placeholder="user name" />
+            <input type="password" class="input press" placeholder="password" />
+            <input type="text" class="input hover" placeholder="login" />
+            <!-- <input type="text" class="input active" placeholder="sign up" /> -->
+            <button class="input active">sign up</button>
+          </div>
+          <div>
+            <div class="flex">
+              <label class="switch">
+                <input type="checkbox" />
+                <div></div>
+              </label>
+              <label class="switch">
+                <input type="checkbox" checked />
+                <div></div>
+              </label>
+            </div>
+            <div class="panel default">
+              <img src="https://placehold.co/115" alt="" class="panel__img" />
+              <div>
+                <div class="panel__label">Lorem, ipsum.</div>
+                <div class="panel__price">$25</div>
+              </div>
+            </div>
+            <div class="flex">
+              <label class="radio">
+                <input type="radio" checked name="round" />
+                <div></div>
+              </label>
+              <label class="radio">
+                <input type="radio" name="round" />
+                <div></div>
+              </label>
+              <label class="radio radio_square">
+                <input type="radio" checked name="square" />
+                <div></div>
+              </label>
+              <label class="radio radio_square">
+                <input type="radio" name="square" />
+                <div></div>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
-      <div class=""></div>
+      <div>
+        <div class="flex">
+          <div class="round-progress press">
+            <svg viewBox="0 0 120 120">
+              <circle r="50" cx="50%" cy="50%"></circle>
+            </svg>
+            <div class="active">60%</div>
+          </div>
+          <div class="round-progress press">
+            <svg viewBox="0 0 120 120">
+              <circle r="50" cx="50%" cy="50%"></circle>
+            </svg>
+            <div class="active">25%</div>
+          </div>
+          <div class="round-progress press">
+            <svg viewBox="0 0 120 120">
+              <circle r="50" cx="50%" cy="50%"></circle>
+            </svg>
+            <div class="active">75%</div>
+          </div>
+        </div>
+        <div class="inner-grid">
+          <div>
+            <div class="progress press">
+              <div style="width: 60%"></div>
+            </div>
+            <div class="progress press">
+              <div style="width: 30%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="progress press">
+              <div style="width: 15%"></div>
+            </div>
+            <div class="progress press">
+              <div style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="search-wrap">
+          <div class="search press">
+            <input type="text" class="input" placeholder="search for" />
+            <i class="ic_search"></i>
+          </div>
+          <button class="button active icon">
+            <i class="ic_arrow_left"></i>
+          </button>
+          <button class="button active icon">
+            <i class="ic_arrow_right"></i>
+          </button>
+        </div>
+        <div class="flex">
+          <div class="tooltip">50%</div>
+          <div class="tooltip">
+            <i class="ic_bell_fill"></i>
+            <i class="ic_heart_fill"></i>
+            <i class="ic_bookmark_fill"></i>
+          </div>
+          <div class="tooltip">Lorem, ipsum.</div>
+        </div>
+        <div class="player">
+          <div class="player__progress">
+            <div style="width: 40%"></div>
+          </div>
+          <div class="player__main">
+            <div class="player__time">1:23</div>
+            <div class="player__action">
+              <button class="button active icon">
+                <i class="ic_prev"></i>
+              </button>
+              <button class="button active icon">
+                <i class="ic_play"></i>
+              </button>
+              <button class="button active icon">
+                <i class="ic_next"></i>
+              </button>
+            </div>
+            <div class="player__time">-00:43</div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="message">
+            Hi! <br />
+            Why I can help you?
+          </div>
+          <div class="message message__active">
+            Hello ^^ <br />
+            Thank you!
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
